@@ -5,41 +5,131 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="style.css">
-<title>Meu portfólio</title>
+<title>Portfólio da Liz</title>
 </head>
 
 <body>
 <header class="container text-center">
-<img src="img/imagemperfill1.jpg" alt="avatar da Liz" class="rounded-circle" width="150" height="150" srcset="">
-<p class="lead">Eu sou Liz </p>
-<h1>Eu estudo programação</h1>
-<p>Sou estudante do ensino médio. Faço projetos de programação. Veja os projetos
-que já fiz!</p>
+<img src="img/personagem" alt="avatar da Liz" class="rounded-circle" width="150" height="150">
+<p class="lead">Olá! Eu sou Liz</p>
+<h1>Entre códigos, cavalos e trilhas do Jão</h1>
+<p>Sou apaixonada por tecnologia, cavalos e música boa (alô, Jão!). Programo com criatividade e um toque de lobisomem, porque *Teen Wolf* nunca sai do coração. Explore meus projetos com um clique!</p>
 <p>Minhas habilidades</p>
 <div>
 <p class="badge bg-secondary">HTML</p>
 <p class="badge bg-secondary">CSS</p>
 <p class="badge bg-secondary">JavaScript</p>
-<p class="badge bg-secondary">Scratch</p>
+<p class="badge bg-secondary">Python</p>
 </div>
 </header>
-<main class="container">
-<h2>Meus projetos</h2>
+
+<main class="container mt-5">
+<h2>Meus projetos favoritos</h2>
 <div class="row">
+<!-- Projeto 1: Site sobre Cavalos -->
 <div class="col-md-4">
-<div class="card" style="width: 18rem;">
-<img src="..." class="card-img-top" alt="...">
+<div class="card">
+<img src="img/projeto-cavalo.png" class="card-img-top" alt="Imagem de um cavalo galopando">
 <div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="#" class="btn btn-primary">Go somewhere</a>
+<h5 class="card-title">Enciclopédia Equestre</h5>
+<p class="card-text">Um site feito com HTML e CSS sobre raças de cavalos, cuidados, curiosidades e até mitos envolvendo esses animais incríveis. Tudo com design limpo e responsivo.</p>
+<button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+</div>
+</div>
+</div>
+
+<!-- Projeto 2: Fanpage do Jão -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/projeto-jao.png" class="card-img-top" alt="Imagem de uma fanpage do Jão">
+<div class="card-body">
+<h5 class="card-title">Fanpage Interativa: Universo do Jão</h5>
+<p class="card-text">Criei uma fanpage para os fãs do Jão, com letras de músicas, curiosidades, álbuns e uma galeria de imagens animada. Feita com JavaScript e amor de fã.</p>
+<button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+</div>
+</div>
+</div>
+
+<!-- Projeto 3: Jogo Teen Wolf -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/projeto-teenwolf.png" class="card-img-top" alt="Imagem do projeto baseado em Teen Wolf">
+<div class="card-body">
+<h5 class="card-title">Teen Wolf: Escolhas Sob a Lua</h5>
+<p class="card-text">Um jogo de escolhas onde você entra no universo de *Teen Wolf*, programado com JavaScript. Decida se vai se juntar ao bando do Scott ou seguir seu próprio caminho!</p>
+<button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Modais (resumo dos projetos dentro dos botões) -->
+<div class="modal" id="modal1" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Enciclopédia Equestre</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+</div>
+<div class="modal-body">
+<p>Um site dedicado ao mundo dos cavalos, com conteúdos educativos, imagens e até curiosidades sobre cavalos famosos na história. Ideal para amantes da natureza e da equitação.</p>
+<img src="img/projeto-cavalo.png" class="img-fluid w-100" alt="Imagem do site de cavalos">
+</div>
+<div class="modal-footer">
+<a href="#">Ver projeto ao vivo</a>
 </div>
 </div>
 </div>
 </div>
 
-</main>
+<div class="modal" id="modal2" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Fanpage Interativa: Universo do Jão</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+</div>
+<div class="modal-body">
+<p>Esse projeto é para todos os "joãonáticos"! Desenvolvi com HTML, CSS e JavaScript. Tem player embutido, seção de letras com rolagem suave e uma área de curiosidades sobre a vida do cantor.</p>
+<img src="img/projeto-jao.png" class="img-fluid w-100" alt="Fanpage do Jão">
+</div>
+<div class="modal-footer">
+<a href="#">Ver projeto ao vivo</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal" id="modal3" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Teen Wolf: Escolhas Sob a Lua</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+</div>
+<div class="modal-body">
+<p>Inspirado na série *Teen Wolf*, esse jogo interativo coloca você como parte do universo sobrenatural de Beacon Hills. Use sua lógica e suas escolhas para sobreviver aos perigos da lua cheia!</p>
+<img src="img/projeto-teenwolf.png" class="img-fluid w-100" alt="Imagem do jogo Teen Wolf">
+</div>
+<div class="modal-footer">
+<a href="#">Ver projeto ao vivo</a>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="container py-5">
+<h2>Entre em contato</h2>
+<div>
+<i class="bi bi-github"></i>
+<a href="https://github.com/[usuario-github-amiga]">GitHub</a>
+</div>
+<p class="my-5 text-center">© Copyright 2024. Criado por [Nome da Amiga]</p>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
